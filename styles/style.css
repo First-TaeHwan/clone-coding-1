@@ -1,0 +1,115 @@
+@import "./reset.css";
+body {
+  background-color: #dce6d1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.phone {
+  background-color: black;
+  border-radius: 50px;
+  width: 420px;
+  padding: 50px 20px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.header {
+  overflow-x: scroll;
+}
+.header .header__list {
+  display: flex;
+  color: white;
+  gap: 10px;
+  width: -moz-max-content;
+  width: max-content;
+}
+.header .header__list .herder__list-item {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  padding: 10px;
+  border-radius: 21px;
+}
+.header .header__list .herder__list-item:nth-child(1) {
+  color: black;
+  background-color: white;
+}
+
+.main {
+  margin-top: 20px;
+  background-color: black;
+  flex: 1;
+  overflow: hidden;
+}
+.main .cards {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+.main .cards .cards__item {
+  cursor: pointer;
+  border-radius: 25px;
+  padding: 18px 15px;
+  background-color: white;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.main .cards .cards__item .item-title {
+  font-size: 30px;
+}
+.main .cards .cards__item .card__footer {
+  font-size: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main .cards .cards__item .card__footer span {
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 10px 12px;
+}
+.main .cards .cards__item .card__footer .item-price {
+  background-color: #e9affc;
+}
+.main .cards .cards__item .card__footer .item-lenght {
+  background-color: white;
+}
+.main .cards .cards__item:nth-child(1) {
+  background-color: #272c30;
+  color: white;
+  border: 1px solid white;
+}
+.main .cards .cards__item:nth-child(1) span {
+  color: black;
+}
+.main .cards .cards__item:nth-child(2) {
+  background-color: #f6f2ef;
+}
+.main .cards .cards__item:nth-child(2) .item-price {
+  background-color: #ffdd2d;
+}
+.main .cards .cards__item:nth-child(3) {
+  background-color: #f8fcb2;
+}
+.main .cards .cards__item:nth-child(4) {
+  background-color: #b09df6;
+}
+.main .cards .cards__item:nth-child(4) .item-price {
+  background-color: #ffdd2d;
+}
+.main .cards .cards__item:nth-child(5) {
+  background-color: #fed2d2;
+}
+.main .cards .cards__item:nth-child(6) {
+  background-color: #d3ffe0;
+}
+.main .cards .cards__item:nth-child(6) .item-price {
+  background-color: #ffdd2d;
+}
+.main .cards .cards__item:nth-child(3n) {
+  grid-column: span 2;
+}

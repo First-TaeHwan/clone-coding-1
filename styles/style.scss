@@ -1,4 +1,4 @@
-@import "./reset.scss";
+@import "./reset.css";
 
 body {
   background-color: #dce6d1;
@@ -11,13 +11,18 @@ body {
 .phone {
   background-color: black;
   border-radius: 50px;
-  height: 58vh;
+  // height: 70vh;
   width: 420px;
   padding: 50px 20px;
   box-sizing: border-box;
+  overflow: hidden;
+  // overflow: scroll; /* 또는 overflow: auto; */
+  // scrollbar-width: none; /* Firefox */
+  // -ms-overflow-style: none;
 }
 .header {
   overflow-x: scroll;
+  // position: fixed;
   .header__list {
     display: flex;
     color: white;
@@ -37,7 +42,8 @@ body {
 .main {
   margin-top: 20px;
   background-color: black;
-
+  flex: 1;
+  overflow: hidden;
   .cards {
     display: grid;
     gap: 10px;
@@ -45,6 +51,7 @@ body {
     grid-template-rows: 1fr 1fr 1fr 1fr;
 
     .cards__item {
+      cursor: pointer;
       border-radius: 25px;
       padding: 18px 15px;
       background-color: white;
